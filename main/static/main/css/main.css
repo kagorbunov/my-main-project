@@ -1,0 +1,93 @@
+body {
+    background: #384239;
+    color: #fff;
+}
+
+aside {
+    float: left;
+    position: fixed;
+    background: #79917d;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #488a53;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+    position: relative;
+    top: -20px;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform .6s ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #000;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+aside ul ul {
+    display: none;
+    position: absolute;
+}
+
+aside  li:hover > ul{
+    display: block;
+    background-color: #384239;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-down: 10px;
+    box-shadow: 1px 5px 10px -5px black;
+}
+aside  li > ul li ul {
+    position: absolute;
+    right: -200px;
+}
+
+
+main{
+    padding-left: 20%;
+    margin-right: 50px;
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+a:link {
+    color: #ffa41c;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
+
+

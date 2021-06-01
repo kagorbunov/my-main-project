@@ -1,0 +1,35 @@
+{% extends 'main/common.html' %}
+
+{%block title %}{{ titleOrder }}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>Заказать модель</h1>
+  <p> Список открытых моделей для ознакомление представлен во вкладке Модели. Для заказа исследования вашей модели,
+    может оставить заявку. Далее с вами свяжутся !</p>
+</div>
+
+<div class="contact-us">
+  <form action="{% url 'make-order' %}" method="POST">
+    {% csrf_token %}
+<!--    <label for="customerName">ВАШЕ ИМЯ <em>&#x2a;</em></label>-->
+<!--    <input id="customerName" name="customerName" required="" type="text"/>-->
+<!--    <label for="customerEmail">EMAIL <em>&#x2a;</em></label>-->
+<!--    <input id="customerEmail" name="customerEmail" required="" type="email"/>-->
+<!--    <label for="customerPhone">НОМЕР ТЕЛЕФОНА</label>-->
+<!--    <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel"/>-->
+<!--    <label for="customerNote">КРАТКОЕ ОПИСАНИЕ <em>&#x2a;</em></label>-->
+<!--    <textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>-->
+<!--    <h3>-->
+<!--      Пожалуйста опишите задачу максимально содержателно.-->
+<!--    </h3>-->
+    {{ form }}
+    <h3>
+      Пожалуйста опишите задачу максимально содержателно.
+    </h3>
+    <button class="OrderButton" id="customerOrder">ОТПРАВИТЬ</button>
+  </form>
+</div>
+
+
+{% endblock %}

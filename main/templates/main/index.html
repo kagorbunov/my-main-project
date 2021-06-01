@@ -1,0 +1,51 @@
+{% extends 'main/common.html' %}
+
+{%block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>{{ title }}</h1>
+  <p> Найти модель на сайте можно на главной странице по названию модели, также можно просмотреть существующие модели во
+    вкладке "модели".</p>
+  <div class="box">
+    <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Поиск..."/>
+    </div>
+  </div>
+  <center>
+      <table class="ModelsView">
+        <tbody>
+        <tr>
+          <th> Название</th>
+          <th> Техническое описание</th>
+          <th> Ссылка на модель</th>
+        </tr>
+        {% for el in diod %}
+        <tr>
+          <td>{{ el.title }}</td>
+          <td><a href="{{ linkhost }}{{ el.technicaldescription.file.url }}" download><button class="btn btn-warning">Техническое описание</button></a></td>
+          <td><a href="{{ linkhost }}{{ el.down.file.url }}" download><button class="btn btn-warning">Скачать модель</button></a></td>
+        </tr>
+        {% endfor %}
+        {% for el in bp %}
+        <tr>
+          <td>{{ el.title }}</td>
+          <td><a href="{{ linkhost }}{{ el.technicaldescription.file.url }}" download><button class="btn btn-warning">Техническое описание</button></a></td>
+          <td><a href="{{ linkhost }}{{ el.down.file.url }}" download><button class="btn btn-warning">Скачать модель</button></a></td>
+        </tr>
+        {% endfor %}
+        {% for el in polev %}
+        <tr>
+          <td>{{ el.title }}</td>
+          <td><a href="{{ linkhost }}{{ el.technicaldescription.file.url }}" download><button class="btn btn-warning">Техническое описание</button></a></td>
+          <td><a href="{{ linkhost }}{{ el.down.file.url }}" download><button class="btn btn-warning">Скачать модель</button></a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </center>
+</div>
+
+
+{% endblock %}

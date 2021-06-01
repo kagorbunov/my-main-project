@@ -1,0 +1,42 @@
+{% extends 'main/common.html' %}
+
+{%block title %}Представленные модели{% endblock %}
+
+{% block content %}
+  <div class="features">
+    <h1>SPICE-модели</h1>
+    <p> Найти модель на сайте можно на главной странице по названию модели, также можно просмотреть существующие модели во
+      вкладке модели.</p>
+    <button class="btn btn-warning">Найти модель</button>
+    <center>
+      <table class="ModelsView">
+        <tbody>
+        <tr>
+          <th> Название</th>
+          <th> Производитель</th>
+          <th> Макс.ток, А</th>
+          <th> Корпус</th>
+          <th> Структура</th>
+          <th> Условия эксплуатации</th>
+          <th> Ссылка на модель</th>
+        </tr>
+        {% for el in mymodel %}
+        {% for e in link %}
+        {% if el.down.id == e.id %}
+        <tr>
+          <td>{{ el.title }}</td>
+          <td>{{ el.function }}</td>
+          <td>{{ el.basicModel }}</td>
+          <td>{{ el.body }}</td>
+          <td>{{ el.structure }}</td>
+          <td>{{ el.conditions.Condition }}</td>
+          <td><a href="http://127.0.0.1:8000{{ e.file.url }}"><button class="btn btn-warning">Скачать модель</button></a></td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+        </tbody>
+      </table>
+    </center>
+  </div>
+{% endblock %}

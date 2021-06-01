@@ -1,0 +1,339 @@
+{% extends 'main/common.html' %}
+
+{%block title %}{{ titleAbout }}{% endblock %}
+
+{% block content %}
+<div class="posts posts_general posts_indent">
+  <div class="post post_single post_first post_last">
+    <div class="post__content">
+      <h1 class="post-title">Научное направление «Моделирование и проектирование приборов, схем
+        и систем микро- и наноэлектроники с учетом влияния внешних воздействующих факторов (температуры и
+        радиации)»</h1>
+      <div class="post__text"><p class="first_child ">Координатор направления – д.т.н., проф., <a target="_blank"
+                                                                                                  href="https://www.hse.ru/org/persons/47633284"
+                                                                                                  class="link">Петросянц
+        К.О.</a>,&nbsp;лауреат премии Правительства РФ в области науки и техники, почетный работник высшего спец.
+        образования РФ, ординарный профессор НИУ ВШЭ).
+      </p>
+        <p class="text"><span style="font-weight: bold;">Направление реализуется&nbsp;</span>на базе лабораторий
+          Департамента электронной инженерии МИЭМ и учебно-научных центров компаний Mentor Graphics и Synopsys. Оно
+          включает два частных направления:</p>
+        <p class="text"><span style="line-height: 115%;"><br>Моделирование и проектирование радиационно- и температуростойких электронных компонентов (Петросянц К.О.).</span>
+        </p>
+        <p class="text"><span style="line-height: 115%;">Методы и средства измерений свойств материалов и приборов электроники и фотоники (<a
+                target="_blank" href="https://www.hse.ru/org/persons/47632744" class="link">Лысенко А.П.</a>, <a
+                target="_blank" href="https://www.hse.ru/org/persons/47633299" class="link">Харитонов И.А</a>., <a
+                target="_blank" href="https://www.hse.ru/staff/leo.samba" class="link">Самбурский Л.М.</a>).</span></p>
+        <br>
+        <p class="text" style="margin: 9.6pt 0cm 0.0001pt;"><span style="font-weight: bold;">Наиболее существенные научные достижения.</span>По
+          признанию ведущих отечественных и зарубежных ученых и специалистов коллектив занимает лидирующие позиции в
+          области моделирования полупроводниковых (п/п) приборов и микросхем, работающих в жестких условиях действия
+          радиации и температуры.</p>
+        <p class="text">Разработаны приборно-технологические (TCAD) и схемотехнические (SPICE) модели и
+          методикиопределения их параметров для биполярных МОП, БиКМОП, IGBT, SiGe и др., транзисторов различной
+          мощности:</p>
+        <ul>
+          <li>для нормальных условий работы элементной базы,&nbsp;</li>
+          <li>с учетом влияния низкой (до -200<sup>о</sup>С) и высокой (до +300<sup>о</sup>С) температуры,</li>
+          <li>с учетом влияния различных факторов радиации: гамма-излучение, нейтроны, протоны, электроны, импульсное
+            излучение, тяжелые заряженные частицы.
+          </li>
+        </ul>
+        <p class="text">Модели построены на базе стандартных моделей путем включения выражений и дополнительных
+          элементов, учитывающих радиационные эффекты.</p>
+        <p class="text" style="margin: 9.6pt 0cm 0.0001pt;">Модели и методики определения их параметров отработаны на
+          элементной базе, выпускаемой ведущими предприятиями-изготовителями:</p>
+        <ul>
+          <li>&nbsp;транзисторов КНИ КМОП БИС памяти,</li>
+          <li>КНИ МОП-транзисторов семейства радиационно-стойких цифро-аналоговых базовых матричных кристаллов (БМК) для
+            микромеханических систем,
+          </li>
+          <li>интегральных схем в узлах специализированной электроники с повышенной радиационной стойкостью,</li>
+          <li>интегральных n-p-n- и p-n-p-транзисторов схем операционных усилителей (ОУ) для приёмников и передатчиков
+            систем связи,
+          </li>
+          <li>дискретных эпитаксиально-планарных n-p-n-транзисторов, используемых в телеметрических системах,</li>
+          <li>мощных биполярных и МОП-транзисторах для вторичных источников питания аппаратуры специального назначения,&nbsp;</li>
+        </ul>
+        <p class="text"><span style="font-weight: bold;">Решаемые задачи:</span></p>
+        <ol>
+          <li>Создание численных математических моделей, описывающих физические процессы в 2-х и 3-х мерных структурах
+            п/п приборов и элементов ИС (TCAD моделей).
+          </li>
+          <li>Создание компактных (SPICE) моделей п/п приборов для расчета электрических схем методами теории цепей
+            (SPICE моделей).
+          </li>
+          <li>Включение моделей в современные приборно-технологические и схемотехнические САПР.</li>
+          <li>Экспериментальное исследование электрических, радиационных и тепловых характеристик п/п приборов,
+            микросхем, БИС, систем на печатных платах.
+          </li>
+          <li>Выполнение реальных проектов по заказам ведущих отечественных предприятий.</li>
+        </ol>
+        <br>Характеристики, требуемые для определения параметров моделей, можно получать несколькими путями:<br>
+        <ul>
+          <li>&nbsp;информацию предоставляет Заказчик по согласованному перечню;</li>
+          <li>&nbsp;МИЭМ НИУ ВШЭ выполняет измерения тестовых образцов, предоставленных Заказчиком, с помощью
+            разработанного аппаратно-программного комплекса (см. рисунки 1 и 2 ниже);
+          </li>
+          <li>требуемые характеристики получаются из результатов моделирования структур приборов с помощью средств
+            приборно-технологического моделирования TCAD (см рисунок 3 ниже).
+          </li>
+        </ul>
+        <p style="text-align: center;" class="text"><img alt="" style="margin: 5px;"
+                                                         src="https://miem.hse.ru/data/2017/11/03/1158465071/Pic_1.png"
+                                                         width="849"
+                                                         height="610"></p>
+        <div style="text-align: center;"><span style="text-align: center;">Рисунок 1.</span></div>
+        <br style="text-align: center;"><br style="text-align: center;">
+        <p style="text-align: center;" class="text"><a href="/data/2017/10/30/1158585084/Pic_2.jpg"
+                                                       class="link link_no-underline"><img alt="Рисунок 2."
+                                                                                           style="margin: 5px;"
+                                                                                           title="Рисунок 2."
+                                                                                           src="https://miem.hse.ru/data/2017/10/30/1158585084/Pic_2.jpg"
+                                                                                           width="800" height="494"></a><br>Рисунок
+          2.<br><br><a href="/data/2017/10/30/1158585060/Pic_3.jpg" class="link link_no-underline"><img alt="Рисунок 3."
+                                                                                                        style="margin: 5px;"
+                                                                                                        title="Рисунок 3."
+                                                                                                        src="https://miem.hse.ru/data/2017/10/30/1158585060/Pic_3.jpg"
+                                                                                                        width="800"
+                                                                                                        height="614"></a><br>Рисунок
+          3.<br><br><a href="/data/2017/10/30/1158585071/Pic_4a.jpg" class="link link_no-underline"><img alt=""
+                                                                                                         style="margin: 5px;"
+                                                                                                         src="https://miem.hse.ru/data/2017/10/30/1158585071/Pic_4a.jpg"
+                                                                                                         width="375"
+                                                                                                         height="250"></a>&nbsp;<a
+                  href="/data/2017/10/30/1158584977/Pic_4b.jpg" class="link link_no-underline"><img alt=""
+                                                                                                    style="margin: 5px;"
+                                                                                                    src="https://miem.hse.ru/data/2017/10/30/1158584977/Pic_4b.jpg"
+                                                                                                    width="334"
+                                                                                                    height="250"></a><br>Рисунок
+          4.<br><br><img alt="" style="margin: 5px;" src="https://miem.hse.ru/data/2017/10/30/1158584861/Pic_5a.jpg"
+                         width="415"
+                         height="310"><a href="/data/2017/10/30/1158584839/Pic_5b.jpg"
+                                         class="link link_no-underline"><img alt="" style="margin: 5px;"
+                                                                             src="https://miem.hse.ru/data/2017/10/30/1158584839/Pic_5b.jpg.(425x310x123).jpg"
+                                                                             width="425" height="310"></a><br>Рисунок 5.<br><br><a
+                  href="/data/2017/10/30/1158584846/Pic_6.jpg" class="link link_no-underline"><img alt=""
+                                                                                                   style="margin: 5px;"
+                                                                                                   src="https://miem.hse.ru/data/2017/10/30/1158584846/Pic_6.jpg"
+                                                                                                   width="500"
+                                                                                                   height="360"></a><br>Рисунок
+          6.</p>
+        <p class="text"><span style="font-weight: bold;">Область применения результатов </span>охватывает электронику
+          таких ключевых отраслей народного хозяйства и обороны страны, как: авто- и авиапром, ракетно-космический
+          комплекс, энергетика (в т.ч, ядерная), нефтяная и газовая отрасли, специальное машиностроение,
+          телекоммуникации и связь, военная техника и др. Модели, разработанные коллективом, используются на
+          предприятиях Росатома, Роскосмоса, Электронпрома и др. при проектировании п/п приборов и схем, обладающих
+          повышенным запасом надежности.</p>
+        <p style="text-align: center;" class="text"><a href="/data/2017/10/30/1158584893/Pic_7a.jpg"
+                                                       class="link link_no-underline"><img alt="" style="margin: 5px;"
+                                                                                           src="https://miem.hse.ru/data/2017/10/30/1158584893/Pic_7a.jpg"
+                                                                                           width="400" height="300"></a><a
+                href="/data/2017/10/30/1158584864/Pic_7b.jpg" class="link link_no-underline"><img alt=""
+                                                                                                  style="margin: 5px;"
+                                                                                                  src="https://miem.hse.ru/data/2017/10/30/1158584864/Pic_7b.jpg"
+                                                                                                  width="300"
+                                                                                                  height="300"></a><br><br>
+        </p>
+        <p style="text-align: center;" class="text"><a href="/data/2017/10/30/1158584875/Pic_8a.jpg"
+                                                       class="link link_no-underline"><img alt="" style="margin: 5px;"
+                                                                                           src="https://miem.hse.ru/data/2017/10/30/1158584875/Pic_8a.jpg"
+                                                                                           width="800" height="462"></a>
+        </p>
+        <p style="text-align: center;" class="text"><a href="/data/2017/10/30/1158585343/Pic_8b.jpg"
+                                                       class="link link_no-underline"><img alt="" style="margin: 5px;"
+                                                                                           src="https://miem.hse.ru/data/2017/10/30/1158585343/Pic_8b.jpg"
+                                                                                           width="388" height="300"></a><a
+                href="/data/2017/10/30/1158585320/Pic_8c.jpg" class="link link_no-underline"><img alt=""
+                                                                                                  style="margin: 5px;"
+                                                                                                  src="https://miem.hse.ru/data/2017/10/30/1158585320/Pic_8c.jpg"
+                                                                                                  width="374"
+                                                                                                  height="300"></a></p>
+        <p class="text" style="margin: 9.6pt 0cm 0.0001pt;"><span style="font-weight: bold;">Академические и промышленные партнеры:&nbsp;</span>ИППМ
+          РАН, НИИСИ РАН, АО «Нанотехно-логический центр» (г. Зеленоград), ОАО НПП «Пульсар», ФГУП ВНИИА, ОАО «НИИМЭ и
+          Микрон» (г. Зеленоград), ФГУП ФНПЦ НИИИС (г. Н. Новгород), ОАО НПО ИТ (г. Королев), НПК Технологический центр
+          МИЭТ (г. Зеленоград) и др.</p>
+        <p style="margin: 6pt 0cm 9pt;" class="text">Работы докладывались на <span style="font-weight: bold;">крупных международных конференциях</span>
+          в США, Англии, Франции, Германии, Бельгии, Италии, Китае, Индии, Японии, Сингапуре, Польше, Уругвае, ЮАР и др.
+          и межведомственных совещаниях.</p>
+        <p style="margin: 6pt 0cm 9pt; text-align: left;" class="text"><span style="text-align: center;">Кремниевая долина (США), крупнейший мировой симпозиум по проблеме учета тепловых процессов в электронной аппаратуре The 33-th SEMI-THERM Symposium “Semiconductor Thermal Measurement, Modeling and Management”.</span>
+        </p>
+        <p style="margin: 6pt 0cm 9pt; text-align: center;" align="center"><a
+                href="/data/2017/10/30/1158585249/Pic_9a.jpg" class="link link_no-underline"><img alt=""
+                                                                                                  style="margin: 5px;"
+                                                                                                  src="https://miem.hse.ru/data/2017/10/30/1158585249/Pic_9a.jpg"
+                                                                                                  width="400"
+                                                                                                  height="300"></a><a
+                href="/data/2017/10/30/1158585258/Pic_9b.jpg" class="link link_no-underline"><img alt=""
+                                                                                                  style="margin: 5px;"
+                                                                                                  src="https://miem.hse.ru/data/2017/10/30/1158585258/Pic_9b.jpg"
+                                                                                                  width="400"
+                                                                                                  height="300"></a><br><br>
+        </p>
+        <p style="margin: 6pt 0cm 9pt; text-align: center;" align="center">Крупная международная конференция по
+          надежности микро- и наноэлектронных приборов – 2017 International Workshop on Reliability of Micro-and
+          Nano-Electronic Devices in Harsh Environment в китайской «Кремниевой долине», г. Чэнду, Китай</p>
+        <p style="margin: 6pt 0cm 9pt; text-align: center;" align="center"><a
+                href="/data/2017/10/30/1158585093/Pic_10.jpg" class="link link_no-underline"><img alt=""
+                                                                                                  style="margin: 5px;"
+                                                                                                  src="https://miem.hse.ru/data/2017/10/30/1158585093/Pic_10.jpg"
+                                                                                                  width="700"
+                                                                                                  height="525"></a></p>
+        <p class="text">На фото профессор К.&nbsp;О.&nbsp;Петросянц с «классиком» в области радиационной стойкости
+          полупроводниковых приборов, профессором Даном Флитвудом, руководителем департамента Электроники и
+          вычислительной техники Вандербильдского университета г.&nbsp;Нешвиль (США), главным редактором журнала IEEE
+          Transaction on Nuclear Science.</p>
+        <p style="text-align: center;" class="text"><a href="/data/2017/10/30/1158585100/Pic_11.jpg"
+                                                       class="link link_no-underline"><img alt="" style="margin: 5px;"
+                                                                                           src="https://miem.hse.ru/data/2017/10/30/1158585100/Pic_11.jpg"
+                                                                                           width="700" height="525"></a>
+        </p>
+        <p class="text">На фото профессор К.&nbsp;О.&nbsp;Петросянц с председателем Оргкомитета конференции, директором
+          Института микроэлектроники Академии наук КНР Джиншуном Би.</p>
+        <p style="margin: 6pt 0cm 9pt;" class="text">&nbsp;</p>
+        <span style="font-weight: bold;">Публикации и гранты за&nbsp; 2013- 2017 г.г.</span>:
+        <ol>
+          <li><span style="text-indent: -18pt;">в изданиях WoS – 25 публ, &nbsp;Scopus – 32 публ.</span></li>
+          <li><span style="text-indent: -18pt;">ВАК РФ -&nbsp; 15 публ.;</span></li>
+          <li><span style="text-indent: -18pt;">кол-во грантов:</span></li>
+        </ol>
+        <p class="text">1 Фундаментальная НИР НИУ ВШЭ;</p>
+        1 индивидуальный грант НИУ ВШЭ,<br>6 грантов РФФИ;
+        <p class="text"><span style="font-weight: bold;">Наиболее значимые публикации</span> <span
+                style="font-weight: bold;">за 2013- 2016 г.г.</span>:</p>
+        <ol>
+          <li>Petrosyants, K.O., Kharitonov, I.A., Lebedev, S.V., Sambursky, L.M., Safonov, S.O., Stakhin, V.G.
+            Electrical characterization and reliability of submicron SOI CMOS technology in the extended temperature
+            range (to 300°C)// Microelectronics Reliability, 2017, in press, doi:10.1016/j.microrel.2017.05.018
+          </li>
+          <li>Konstantin O. Petrosyants, Lev M. Sambursky, Igor A. Kharitonov, Boris G. Lvov. Radiation-Induced Fault
+            Simulation of SOI/SOS CMOS LSI’s Using Universal Rad-SPICE MOSFET Model // Journal of Electronic Testing:
+            Theory and Applications (JETTA). 2017. Vol. 33. No. 1. P. 37-51.
+          </li>
+          <li>Petrosyants K. O., Kozhukhov M. V. Physical TCAD model for proton radiation effects in SiGe HBTs // IEEE
+            Transactions on Nuclear Science. 2016. Vol. 63. No. 4. P. 2016 -2021.
+          </li>
+          <li>Konstantin O. Petrosyants, Sergey V. Lebedev, Sambursky L. M., Veniamin G. Stakhin, Kharitonov I. A.
+            Temperature Characterization of Small-Scale SOI MOSFETs in the Extended Range (to 300°C) // Proceedings of
+            the 22nd International Workshop on Thermal Investigations of ICs and Systems (Therminic 2016). IEEE, 2016.
+            P. 250-254.
+          </li>
+          <li>Петросянц К. О., Самбурский Л. М., Харитонов И. А., Кожухов М. В. Измерения электрических характеристик
+            биполярных и МОП-транзисторов под действием радиации // Измерительная техника. 2016. № 10. С. 55-60.
+          </li>
+          <li>Петросянц К. О. Модели полупроводниковых приборов для проектирования БИС космического назначения //
+            Международной форум "Микроэлектроника-2016". 2-я научная конференция "Интегральные схемы и микроэлектронные
+            модули". М.: Техносфера, 2016. С. 33-37.
+          </li>
+          <li>Kharitonov I. A., Petrosyants K. O., Popov A. V. Analysis of temperature-current rise in modern PCB traces
+            by means of thermography, in: Proceedings of the 13th International Workshop on Advanced Infrared Technology
+            and Applications (AITA-2015). Piza: CNR-ISTI, Italy; Fondazione “Giorgio Ronchi”, Firenze, 2015. P. 171-174.
+          </li>
+          <li>Petrosyants K. O., Rjabov N. Quasi –3D Electrical and Thermal Modeling of Microelectronic Semiconductor
+            Devices // Proc. of International Conference on Simulation, Modeling and Mathematical Statistics
+            (SMMS-2015). Lancaster: DEStech Publications,Inc., 2015. P. 252-257.
+          </li>
+          <li>Petrosyants K. O., Kharitonov I. A., Sambursky L. M., Mokeev A. S. Rad-Hard Versions of SPICE MOSFET
+            Models for Effective Simulation of SOI/SOS CMOS Circuits Taking into Account Radiation Effects// Proc. of
+            the 24th European conference on radiation and its effects on components and systems -2015 (RADECS 2015),
+            Moscow, Russia, 14-18 September. Piscataway: Institute of Electrical and Electronic Engineers, 2015. P.
+            23-26.
+          </li>
+          <li>Konstantin O. Petrosyants, Kharitonov I. A., Sambursky L. M. SOI/SOS MOSFET Universal Compact SPICE Model
+            with Account for Radiation Effects// EUROSOI-ULIS2015 2015 Joint International EUROSOI Workshop and
+            International Conference on Ultimate Integration on Silicon January 26-28, 2015 - Bologna, Italy. Bologna:
+            IEEE, 2015. P. 305-308.
+          </li>
+          <li>Петросянц К. О., Рябов Н. И., Харитонов И. А., Козынко П. А. Подсистемы электротеплового моделирования
+            СБИС и печатных плат, расширяющие возможности коммерческих САПР // Международная конференция
+            «Микроэлектроника 2015». Сборник тезисов. г.Алушта, Крым, 28 сентября - 3 октября 2015 г. М. : Техносфера,
+            2015. С. 231-232.
+          </li>
+          <li>Petrosyants K. O., Kharitonov I. A., Kozynko P., Rjabov N. Multilevel System for Thermal Design, Control
+            and Management of Electronic Components // International Journal of Advancements in Electronics and
+            Electrical Engineering. 2014. Vol. 3. No. 2. P. 22-27.<br><br></li>
+        </ol>
+        <p class="text">
+          <span style="font-weight: bold;">
+            Более детальная информация – в буклетах:
+          </span>
+        </p>
+        <p class="text">Измерение и контроль температуры полупроводниковых приборов, микросхем, печатных плат и
+          блоков</p>
+        <p class="text">Моделирование тепловых процессов в полупроводниковых приборах, микросхемах, печатных платах и
+          блоках</p>
+        <p class="text">Исследование и моделирование&nbsp; радиационных эффектов в полупроводниковых приборах и
+          схемах</p>
+        <p class="text"><br>
+          <span style="font-weight: bold;">
+            <span style="font-weight: bold;">
+              Контактная информация:
+            </span>
+          </span>
+        </p>
+        <div class="b-greetings__item _mceNonEditable">
+          <div class="first_child b-greetings__person ">
+            <div class="first_child g-pic">
+              <img alt="" src="https://miem.hse.ru/mirror/org/persons/cimage/47633284">
+            </div>
+            <div class="last_child b-greetings__person_data ">
+              <a href="http://www.hse.ru/org/persons/47633284" class="b link_dark2 link mceEditable">
+                Петросянц Константин Орестович
+              </a>
+              <p class="last_child mceEditable">Департамент электронной инженерии: Профессор</p>
+            </div>
+          </div>
+          <div class="last_child b-greetings__descr selcontent mceEditable">
+            123458, Москва, Таллинская, 34, к. 713<br>
+            Телефон:&nbsp;(495) 772-95-90*15208,&nbsp;<br>
+            E-mail:&nbsp;<a href="mailto:kpetrosyants@hse.ru" style="border-bottom-color: rgba(210, 39, 11, 0.3); background-color: #ffffff;" class="link">kpetrosyants@hse.ru</a>
+          </div>
+        </div>
+        <div class="b-greetings__item _mceNonEditable">
+          <div class="first_child b-greetings__person ">
+            <div class="first_child g-pic">
+              <img alt="" src="https://miem.hse.ru/mirror/org/persons/cimage/47633299">
+            </div>
+            <div class="last_child b-greetings__person_data ">
+              <a href="http://www.hse.ru/org/persons/47633299" class="b link_dark2 link mceEditable">
+                Харитонов Игорь Анатольевич
+              </a>
+              <p class="last_child mceEditable">Департамент электронной инженерии: Профессор</p>
+            </div>
+          </div>
+          <div class="last_child b-greetings__descr selcontent mceEditable">
+            123458, Москва, Таллинская, 34<br>
+            Телефон: (495) 772-9590*15214,&nbsp;<br>
+            E-mail:&nbsp;<a href="mailto:%20ikharitonov@hse.ru" class="link">ikharitonov@hse.ru</a>
+          </div>
+        </div>
+        <div class="b-greetings__item _mceNonEditable">
+          <div class="first_child b-greetings__person ">
+            <div class="first_child g-pic">
+              <img alt="" src="https://miem.hse.ru/mirror/org/persons/cimage/47633305">
+            </div>
+            <div class="last_child b-greetings__person_data ">
+              <a href="http://www.hse.ru/org/persons/47633305" class="b link_dark2 link mceEditable">
+                Самбурский Лев Михайлович
+              </a>
+              <p class="last_child mceEditable">
+                Департамент электронной инженерии: Доцент
+              </p>
+            </div>
+          </div>
+          <div class="last_child b-greetings__descr selcontent mceEditable">
+            123458, Москва, Таллинская, 34, к. 213<br>
+            Телефон: (495) 772-95-90*15227,&nbsp;<br>
+            E-mail:&nbsp;<a href="mailto:%20lsambursky@hse.ru" class="link">lsambursky@hse.ru</a>
+          </div>
+        </div>
+        <p class="text">&nbsp;</p>
+        <div class="last_child b-greetings__item congratulationDialog _mceNonEditable">
+          <div class="first_child last_child b-greetings__descr selcontent mceEditable">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

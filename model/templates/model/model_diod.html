@@ -1,0 +1,44 @@
+{% extends 'main/common.html' %}
+
+{%block title %}Представленные модели{% endblock %}
+
+{% block content %}
+  <div class="features">
+    <h1>Таблица SPICE-моделей диодов</h1>
+    <p> Найти модель на сайте можно на главной странице по названию модели, также можно просмотреть существующие модели во
+      вкладке модели.</p>
+    <button class="btn btn-warning">Найти модель</button>
+    <center>
+      <table class="ModelsView">
+        <tbody>
+        <tr>
+          <th> Название</th>
+          <th> Производитель</th>
+          <th> max Iд, А</th>
+          <th> max Uд, В</th>
+          <th> max Uпроб, В</th>
+          <th> max P, Вт</th>
+          <th> Корпус</th>
+          <th> Условия эксплуатации</th>
+          <th> Техническое описание</th>
+          <th> Ссылка на модель</th>
+        </tr>
+        {% for el in mymodel %}
+        <tr>
+          <td>{{ el.title }}</td>
+          <td>{{ el.function }}</td>
+          <td>{{ el.maxcurrent }}</td>
+          <td>{{ el.maxvoltage }}</td>
+          <td>{{ el.breakdownvoltage }}</td>
+          <td>{{ el.basicModel }}</td>
+          <td>{{ el.body }}</td>
+          <td>{{ el.conditions }}</td>
+          <td><a href="{{ linkhost }}{{ el.technicaldescription.file.url }}" download><button class="btn btn-warning">Техническое описание</button></a></td>
+          <td><a href="{{ linkhost }}{{ el.down.file.url }}" download><button class="btn btn-warning">Скачать модель</button></a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </center>
+  </div>
+{% endblock %}
